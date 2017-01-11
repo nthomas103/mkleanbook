@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2017-01-10 Tue 16:32 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A mkleanbook example</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Joe Doe" />
+<link rel="stylesheet" href="css/tutorial.css"/>
+<link rel="stylesheet" href="css/code.css"/>
+<script type="text/javascript" charset="utf-8">if(!window.PolymerGestures) { var head = document.getElementsByTagName('head')[0]; var js = document.createElement("script"); js.type = "text/javascript"; js.src = "//cdn.jsdelivr.net/webcomponentsjs/0.7.20/webcomponents.min.js"; head.appendChild(js); } </script>
+<link rel='import' href='juicy-ace-editor.html'/>
+</head>
+<body>
+<div id="content">
+<h1 class="title">A mkleanbook example</h1>
+
+<div id="outline-container-org04fb407" class="outline-2">
+<h2 id="org04fb407"><span class="section-number-2"> 1</span> Heading</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+You can put lean code in a <code>BEGIN_SRC</code> / <code>END_SRC</code> block:
+</p>
+
+<div class="org-src-container">
+<juicy-ace-editor id='lean-juicy-ace-editor-1' mode="ace/mode/lean" readonly="true">check nat.rec
+</juicy-ace-editor><div id='lean-full-code-1' style='display:none'>check nat.rec
+</div><div class='no-print' align="left"><button type="button" onclick="invoke_leanjs($('#lean-full-code-1').text());">Try it yourself &raquo;</button></div>
+</div>
+</div>
+
+<div id="outline-container-org3a620fa" class="outline-3">
+<h3 id="org3a620fa"><span class="section-number-3"> 1.1</span> Sub-heading</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+If you only want to show part of the code in the text, then you can enclose the
+part of the code that you want to show with <code>BEGIN</code> / <code>END</code> comments:
+</p>
+
+<div class="org-src-container">
+<juicy-ace-editor id='lean-juicy-ace-editor-2' mode="ace/mode/lean" readonly="true">constant and : Prop -&gt; Prop -&gt; Prop</juicy-ace-editor><div id='lean-full-code-2' style='display:none'>namespace hide
+
+constant and : Prop -&gt; Prop -&gt; Prop
+
+end hide
+</div><div class='no-print' align="left"><button type="button" onclick="invoke_leanjs($('#lean-full-code-2').text());">Try it yourself &raquo;</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
