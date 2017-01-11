@@ -95,11 +95,11 @@ $(NAV_DATA): copy-html-assets
 
 copy-html-assets:
 	sed 's|COPYRIGHT_NOTICE|$(COPYRIGHT_NOTICE)|;s|AUTHORS|$(AUTHORS)|;s|TITLE|$(TITLE)|;s|COMBINED|$(COMBINED)|g' $(MKLEANBOOK_PATH)/index.html >index.html
-	cp -ra $(MKLEANBOOK_PATH)/juicy-ace-editor.html ./
-	cp -ra $(MKLEANBOOK_PATH)/css ./
-	cp -ra $(MKLEANBOOK_PATH)/fonts ./
-	cp -ra $(MKLEANBOOK_PATH)/images ./
-	cp -ra $(MKLEANBOOK_PATH)/js ./
+	cp -Ra $(MKLEANBOOK_PATH)/juicy-ace-editor.html ./
+	cp -Ra $(MKLEANBOOK_PATH)/css ./
+	cp -Ra $(MKLEANBOOK_PATH)/fonts ./
+	cp -Ra $(MKLEANBOOK_PATH)/images ./
+	cp -Ra $(MKLEANBOOK_PATH)/js ./
 
 .PHONY: all copy-html-assets clean install-cask pygments-main
 
